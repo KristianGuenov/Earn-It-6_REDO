@@ -2,11 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Earn it</title>
+    <link rel="stylesheet" href="login_styles.css">
 </head>
 <body>
 
+<div class="pageBody">
+    <div id="contentBox">
+        <div id="contentBoxHeader">
+            <a href="login.html"><img src="img/logo.png" alt="Earn it" id="headerLogo"></a>
+        </div>
 
+        <div class="actionBox" >
+            <h1>Sign In</h1>
+            <input type="text" name="" placeholder="email address" id="email">
+            <input type="password" name="" placeholder="password" id="passWord">
+            <span>
+                        <button class="signInButton" onclick="login()">Sign In</button>
+                    </span>
+            <div class="actionBoxSignUp" >
+                <p>Don't have an account?</p>
+                <button class="signUpButton" onclick="goto_student_signup()">Sign Up</button>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="pageFooter">
+    <img src="img/invertedLogo.png" alt="Earn it" id="footerLogo">
+</div>
 
 </body>
 </html>
+
+<script>
+function goto_student_signup() {
+document.location.href = "student_signup.html"
+}
+
+
+</script>
